@@ -1,21 +1,21 @@
-Take a video and replace the face in it with a face of your choice. You only need one image of the desired face. No dataset, no training.
 
-That's it, that's the software. You can watch some demos [here](https://drive.google.com/drive/folders/1KHv8n_rd3Lcr2v7jBq1yPSTWM554Gq8e?usp=sharing).
+使用一段视频，将其中的面部替换为你选择的面部。你只需要一张所需面部的图像，不需要数据集或训练。
+
+就是这样，这就是这个软件。你可以观看一些[演示](https://drive.google.com/drive/folders/1KHv8n_rd3Lcr2v7jBq1yPSTWM554Gq8e?usp=sharing).
 
 ![demo-gif](demo.gif)
 
-## How do I install it?
-> Note: The instructions may or may not work for you. Use google or look through issues people have created here to solve your problems.
+## 如何安装？
 
-There are two types of installations: basic and gpu-powered.
+有两种安装方式：基本安装和使用 GPU 加速的安装。
 
-- **Basic:** It is more likely to work on your computer but it will also be very slow. You can follow instructions for the basic install [here](https://github.com/s0md3v/roop/wiki/1.-Installation).
+基本安装： 这种方式更有可能在你的计算机上运行，但速度会非常慢。你可以按照基本安装的指令进行操作。 [查看](https://github.com/s0md3v/roop/wiki/1.-Installation).
 
-- **GPU:** If you have a good GPU and are ready for solving any software issues you may face, you can enable GPU which is wayyy faster. To do this, first follow the basic install instructions given above and then follow GPU-specific instructions [here](https://github.com/s0md3v/roop/wiki/2.-GPU-Acceleration).
+- **GPU:** 如果你有一块好的 GPU，并且准备解决可能遇到的任何软件问题，你可以启用 GPU 加速，速度会快很多。要做到这一点，首先按照上述的基本安装指令进行操作，然后按照针对 GPU 的特定指令进行操作。 [查看](https://github.com/s0md3v/roop/wiki/2.-GPU-Acceleration).
 
-## How do I use it?
-> Note: When you run this program for the first time, it will download some models ~300MB in size.
-
+## 如何运行
+> Note: 第一次运行会下载大约300mb的的模型包，如果提示缺乏taskname，就要下载inswapper_128.onnx，并保存到根目录，不要保存在模型生成的文件夹下
+打开命令行输入<python run.py>
 Executing `python run.py` command will launch this window:
 ![gui-demo](gui-demo.png)
 
