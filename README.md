@@ -16,20 +16,25 @@
 特别注明：我在使用GPU执行时，我的AMD 5950x和RTX 3080ti均达到了100%占用，并且发生蓝屏。暂时未在RTX3090上测试。暂不清楚是什么问题导致的。
 
 ## 如何运行
+
 > Note: 第一次运行会下载大约300mb的的模型包，如果提示缺乏taskname，就要下载inswapper_128.onnx，并保存到根目录，不要保存在模型生成的文件夹下，不然会出现同样的问题。
 
 ## windows下
-打开命令行输入
+
+打开命令行输入进行CPU执行（推荐）
 
 ```
 python run.py
-
 ```
 
 如果想要通过GPU执行则输入
 ```
 python run.py --gpu
+```
 
+CMD/PowerShell命令行
+```
+python run.py -f face.jpg -t input.mp4 -o output.mp4
 ```
 
 
@@ -59,15 +64,14 @@ options:
                         set max cpu cores
 ```
 
-Looking for a CLI mode? Using the -f/--face argument will make the program in cli mode.
 
 ## Future plans
-- [ ] Improve the quality of faces in results
-- [ ] Replace a selective face throughout the video
-- [ ] Support for replacing multiple faces
+- [ ] 提高结果中人脸的质量
+- [ ] 在整个视频中替换选定的人脸
+- [ ] 支持替换多个人脸
 
 ## Disclaimer
-Deepfake software already exist. This is just an experiment to make the existing techniques better. Users are expected to use this to learn about AI and not use it for illicit or unethical purposes. Users must get consent from the concerned people before using their face and must not hide the fact that it is a deepfake when posting content online. I am not responsible for any malicious activity done through this software, this is a purely educational project aimed at exploring AI.
+深度伪造软件已经存在。这只是一个实验，旨在改进现有的技术。用户预期使用这个软件来学习人工智能，而不是用于非法或不道德的目的。用户在使用他人的面部图像前必须获得相关人员的同意，并在在线发布内容时不得隐藏这是一个深度伪造的事实。我对通过这个软件进行的任何恶意活动不负任何责任，这是一个纯粹的教育项目，旨在探索人工智能。
 
 ## Credits
 - [ffmpeg](https://ffmpeg.org/): for making video related operations easy
