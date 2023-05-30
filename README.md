@@ -19,8 +19,18 @@
 > Note: 第一次运行会下载大约300mb的的模型包，如果提示缺乏taskname，就要下载inswapper_128.onnx，并保存到根目录，不要保存在模型生成的文件夹下，不然会出现同样的问题。
 
 ## windows下
-打开命令行输入<python run.py>即可运行
-如果想要通过GPU执行则输入<python run.py --gpu>
+打开命令行输入
+
+```
+python run.py
+
+```
+
+如果想要通过GPU执行则输入
+```
+python run.py --gpu
+
+```
 
 
 ![gui-demo](gui-demo.png)
